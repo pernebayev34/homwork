@@ -1,0 +1,52 @@
+.app {
+  min-height: 100vh;
+  background-color: #000;
+}
+
+main {
+  min-height: calc(100vh - 72px);
+}
+
+.footer {
+  border-top: 1px solid rgba(128, 232, 245, 0.06);
+  padding: 32px 24px;
+}
+
+.footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerLogo {
+  font-size: 20px;
+  font-weight: 800;
+  color: #80E8F5;
+}
+
+.footerDot {
+  color: #FFE600;
+}
+
+.footerText {
+  font-size: 13px;
+  color: #9CA3AF;
+}
+
+input::placeholder {
+  color: #9CA3AF;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .footerInner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
